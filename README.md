@@ -25,8 +25,6 @@ Git does not preserve these permissions, so you will need to change ownership of
 Please show the appropriate amount of caution for working with files as root.  We are not responsible if you destroy your system
 in the process.
 
-#### Permissions Note
-
 ## Relevant Information
 
 Info and documentation
