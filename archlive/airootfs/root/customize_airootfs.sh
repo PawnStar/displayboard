@@ -12,8 +12,6 @@ cp -aT /etc/skel/ /root/
 chmod 700 /root
 
 ! id display && useradd -m -s /usr/bin/zsh display
-cp -aT /etc/skel/ /home/display/
-chmod 700 /home/display/
 
 sed -i 's/#\(PermitRootLogin \).\+/\1yes/' /etc/ssh/sshd_config
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
