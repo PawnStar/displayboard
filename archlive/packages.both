@@ -71,3 +71,6 @@ xorg-xinit
 ttf-dejavu
 bspwm
 chromium
+sxhkd
+lxterminal
+dmenu
