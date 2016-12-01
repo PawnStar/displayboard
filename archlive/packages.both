@@ -64,3 +64,10 @@ wpa_actiond
 wvdial
 xl2tpd
 zd1211-firmware
+
+xorg-server
+xorg-server-utils
+xorg-xinit
+ttf-dejavu
+bspwm
+chromium
