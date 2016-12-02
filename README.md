@@ -44,7 +44,7 @@ if you destroy your system in the process.
 
 Info and documentation
 
-### Notable required packages
+### Nonstandard packages
 
 ###### xorg-server, xorg-server-utils, and xorg-xinit
 I hope I don't need to explain to you why these are necessary.
@@ -65,6 +65,8 @@ So we can run arbitrary commands easily
 So the touchpad works on our Dell laptop
 ###### compton
 For nice compositing effects and window transitions.
+###### unclutter
+Hides the mouse after a few seconds.
 
 ### Nonstandard configuration
 
@@ -92,8 +94,8 @@ resolution.  Starts bspwm.
 ###### bspwm
     archlive/airootfs/etc/skel/.config/bspwm/bspwmrc
 Pretty typical.  Starts sxhkd, sets some bspw configuration
-(including switching to "monacle mode"), then starts compton
-and chromium.
+(including switching to "monacle mode"), then starts compton,
+unclutter, and chromium.
 
 ### Remote Control
 

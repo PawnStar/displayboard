@@ -21,4 +21,5 @@ bspc desktop -l next
 
 # Start chromium
 compton -b
+unclutter &
 chromium --app="http://trouble.physics.byu.edu/display/"
