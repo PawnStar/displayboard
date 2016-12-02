@@ -3,12 +3,9 @@
 # Disable laptop display
 xrandr --output "LVDS-1" --off
 
-# Force VGA output
-xrandr --output "VGA-1" --auto
-
 # Keyboard control
 sxhkd &
-#compton &
+compton &
 
 # Three desktops
 bspc monitor ^1 -d I II III

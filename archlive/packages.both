@@ -74,3 +74,5 @@ chromium
 sxhkd
 lxterminal
 dmenu
+xf86-input-synaptics
+compton
