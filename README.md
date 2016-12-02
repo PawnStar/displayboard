@@ -68,7 +68,7 @@ For nice compositing effects and window transitions.
 
 ### Nonstandard configuration
 
-The .xinitrc script is somewhat nonstandard, see below.
+The .xinitrc script is somewhat nonstandard, see [below](#xinitrc).
 
 ### Startup scripts
 
