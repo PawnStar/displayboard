@@ -1,18 +1,14 @@
 #! /bin/sh
 
-# Disable laptop display
-xrandr --output "LVDS-1" --off
-
 # Keyboard control
 sxhkd &
-compton &
 
 # Three desktops
 bspc monitor ^1 -d I II III
 
 # Other config (TODO: trim down)
-bspc config border_width        	0
-bspc config window_gap          	0
+bspc config border_width        	2
+bspc config window_gap          	12
 bspc config split_ratio          	0.52
 bspc config borderless_monocle   	true
 bspc config gapless_monocle      	true
@@ -20,5 +16,9 @@ bspc config focus_by_distance    	true
 bspc config focus_follows_pointer	true
 bspc config history_aware_focus  	true
 
+# Start in monacle mode
+bspc desktop -l next
+
 # Start chromium
+compton -b
 chromium --app="http://trouble.physics.byu.edu/display/"
