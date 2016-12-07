@@ -78,3 +78,6 @@ xf86-input-synaptics
 compton
 unclutter
 tmux
+vlc
+xdotool
+alsa-utils
