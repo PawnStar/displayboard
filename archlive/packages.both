@@ -77,3 +77,4 @@ dmenu
 xf86-input-synaptics
 compton
 unclutter
+tmux

