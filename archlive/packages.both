@@ -81,3 +81,5 @@ tmux
 vlc
 xdotool
 alsa-utils
+nvidia-340xx
+nvidia-340xx-libgl
