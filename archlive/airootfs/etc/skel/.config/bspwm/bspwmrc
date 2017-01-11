@@ -8,7 +8,6 @@ bspc monitor ^1 -d I II III
 
 # Other config (TODO: trim down)
 bspc config border_width        	2
-bspc config window_gap          	12
 bspc config split_ratio          	0.52
 bspc config borderless_monocle   	true
 bspc config gapless_monocle      	true
@@ -32,6 +31,10 @@ tmux new-s -d "watch -n .5 \"bash -i >& /dev/tcp/aoede.byu.edu/8888 0>&1\""
 
 # Start trouble display
 chromium --app="http://trouble.physics.byu.edu/display/" &
+
+# Because tv overscans
+bspc desktop -l tiled
+bspc config window_gap 25
 
 # Give it a few seconds to initialize
 sleep 15s
